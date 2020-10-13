@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@font-face{
+    src: url(fonts/SCRIPTIN.ttf);
+    font-family: noz;
+}
+
+:root{
+    --lightgrey: rgb(107, 106, 106);
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +16,7 @@
 
 html, body{
     height: 100%;
-    font-style: italic;
+    font-family: 'Poppins', sans-serif;
 }
 
 img{
@@ -79,7 +89,7 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     align-items: start;
-    background: url(/Images/furniture1.jpg);
+    background: url(/Images/Homepage\ v12-39.jpg);
     min-height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -132,12 +142,23 @@ nav a:hover{
     font-size: 2.5em;
     position: relative;
     display: block;
+    line-height: 100%;
+    
     
     
 }
 
 .about span{
     display: block;
+    
+}
+
+.about .boutique{
+    font-family: noz;
+    display: inline;
+    
+    font-size: 35px;
+    
 }
 
 .about h2::before{
@@ -172,3 +193,184 @@ nav a:hover{
    font-weight: bold;
    color: rgb(107, 106, 106);
 }
+
+.about .steps{
+    margin-top: 200px;
+}
+
+.about .steps ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+
+.about .steps ul li img{
+    height: 150px;
+}
+
+.about .nummer{
+    border-radius: 50%;
+    border: 2px solid rgb(107, 106, 106);
+    width: 30px;
+    justify-self: center;
+    font-weight: bold;
+    color: rgb(107, 106, 106);
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.line{
+    background-color: var(--lightgrey);
+    height: 2px;
+    border-radius: 10px;
+    width: 330px;
+    display: inline-block;
+    top: 10px;
+    left: 60px;
+    position: absolute;
+}
+
+/*Best sellers*/
+
+.bestSellers{
+    background-color: #ededeb ;
+    margin-top: 230px;
+    padding-top: 80px;
+}
+
+.bestSellers h2{
+    font-size: 2.5em;
+    position: relative;
+    display: block;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 110px;
+    
+}
+
+.bestSellers h2 span {
+    display: block;
+}
+
+.bestSellers h2::before{
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: var(--lightgrey);
+    position: absolute;
+    border-radius: 2px;
+    display: block;
+    top: 50%;
+    left:34%
+}
+
+.bestSellers h2::after{
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: var(--lightgrey);
+    position: absolute;
+    border-radius: 2px;
+    display: block;
+    top: 50%;
+    right:34%
+}
+
+.bestSellersImg{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+
+}
+
+.bestSellersImg img{
+    height: 230px;
+    padding: 0 15px;
+
+}
+
+.bestSellersImg figcaption{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Categories */
+
+.categories{
+    padding-top: 300px;
+}
+
+.categories h2{
+    font-size: 2.5em;
+    position: relative;
+    display: block;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 110px;
+}
+
+.categories h2::before{
+    content: "";
+    width: 150px;
+    height: 3px;
+    background-color: var(--lightgrey);
+    position: absolute;
+    border-radius: 2px;
+    display: block;
+    top: 50%;
+    left:34%
+}
+
+.categories h2::after{
+    content: "";
+    width: 150px;
+    height: 3px;
+    background-color: var(--lightgrey);
+    position: absolute;
+    border-radius: 2px;
+    display: block;
+    top: 50%;
+    right:34%
+}
+
+.categoriesImg{
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    
+}
+
+.categoriesImg img{
+    height: 230px;
+}
+
+.categories figcaption{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.categories button{
+    background-color: white;
+    padding: 8px 30px;
+    margin-bottom: 50px;
+    border-color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.categories button:hover{
+    opacity: .7;
+}
+
+
+
+
+
+
+
